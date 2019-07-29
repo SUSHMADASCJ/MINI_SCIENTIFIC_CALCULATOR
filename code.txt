@@ -1,0 +1,111 @@
+print("\t\t\t\t\t CALCULATOR \t\t\t\t\t")
+print("____________________________________________")
+print(" __         __              ___  __   __     ")
+print("|    /\ |  |   |  ||    /\   |  |  | |__|   |")
+print("|__ /  \|__|__ |__||__ /  \  |  |__| |  \   |")
+print("|___________________________________________|")
+import math
+print("CHOOSE YOUR OPERTIONt\t\t\t\t PRESS THIS FOR OPERATION")
+print("1.Addition           \t\t\t\t           +             ")
+print("2.Subtraction        \t\t\t\t             ")
+print("3.Multiplication     \t\t\t\t           *             ")
+print("4.Division           \t\t\t\t           /             ")
+print("5.Remainder          \t\t\t\t           %             ")
+print("6.Square             \t\t\t\t           square              ")
+print("7.Cube               \t\t\t\t           cube                    ")
+print("8.Square Root        \t\t\t\t           squareroot                    ")
+print("9.Binary Conversion  \t\t\t\t           convert_to_binary               ")
+print("10.Power             \t\t\t\t           power               ")
+print("11.Sine              \t\t\t\t           sin              ")
+print("12.Cosine            \t\t\t\t           cos             ")
+print("13.Tangent           \t\t\t\t           tan                          ")
+print("14.Cotangent         \t\t\t\t           cot             ")
+print("15.Secant            \t\t\t\t           sec              ")
+print("16.Cosecant          \t\t\t\t           cosec               ")
+print("17.LogBase2          \t\t\t\t           logbase2                ")
+print("18.LogBase10         \t\t\t\t           logbase10                  ")
+print("19.Inverse           \t\t\t\t           inverse             ")
+n=int(input("enter first number"))
+m=int(input("enter second number"))
+ch=input("enter the operation to be performed")
+if ch=='+':
+    print("ADDITION")
+    c=n+m
+    print(c)
+elif ch=='-':
+    print("SUBTRACTION")
+    c=n-m
+    print(c)
+elif ch=='*':
+    print("MULTIPLICATION")
+    c=n*m
+    print(c)
+elif ch=='/':
+    print("DIVISION")
+    c=n/m
+    print(float(c))
+    print("for integer value")
+    c=n//m
+    print(c)
+elif ch=='%':
+    print("REMAINDER")
+    c=n%m
+    print(c)
+elif ch=='square':
+    print("SQUARE")
+    c=n*n
+    print(c)
+elif ch=='cube':
+    print("CUBE")
+    c=n*n*n
+    print(c)
+elif ch=='squareroot':
+    print("SQUARE ROOT")
+    c=math.sqrt(n)
+    print(c)
+elif ch=='convert_to_binary':
+    print("BINARY CONVERSION")
+    c=bin(n)
+    print(c)
+elif ch=='power':
+    print("POWER")
+    z=n**m
+    print(z)
+elif ch=='sin':
+    print("SINE OF A NUMBER")
+    z=math.sin(n)
+    print(z)
+elif ch=='cos':
+    print("COSINE OF A NUMBER")
+    z=math.cos(n)
+    print(z)
+elif ch=='tan':
+    print("TANGENT OF A NUMBER")
+    z=math.tan(n)
+    print(z)
+elif ch=='cot':
+    print("COTANGENT OF A NUMBER")
+    z=1/(math.tan(n))
+    print(z)
+elif ch=='sec':
+    print("SECANT OF A NUMBER")
+    z=1/(math.cos(n))
+    print(z)
+elif ch=='cosec':
+    print("COSECANT OF A NUMBER")
+    z=1/(math.sin(n))
+    print(z)
+elif ch=='logbase2':
+    print("LOG BASE 2 OF A NUMBER")
+    z=math.log2(n)
+    print(z)
+elif ch=='logbase10':
+    print("LOG BASE 10 OF A NUMBER")
+    z=math.log10(n)
+    print(z)
+elif ch=='inverse':
+    print("INVERSE")
+    z=1/(n)
+    print(z)
+else:
+    print("invalid operation")
